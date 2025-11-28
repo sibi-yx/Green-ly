@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======== NAVBAR BASE STYLE ======== */
+.navcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: "Changa One", sans-serif;
+  color: rgb(19, 153, 19);
+  font-size: 28px;
+}
+
+/* ======== LINKS ======== */
+.navlinks ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-family: "Share Tech", sans-serif;
+}
+
+.navlinks li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navlinks li:hover {
+  color: rgb(19, 153, 19);
+  transition: 0.3s;
+}
+
+/* ======== ICONS ======== */
+.navicons ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color: rgb(19, 153, 19);
+}
+
+.navicons li {
+  cursor: pointer;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .navcontainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navlinks ul {
+    gap: 25px;
+    margin: 15px 0;
+  }
+
+  .navicons ul {
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 600px) {
+  .navcontainer {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .navlinks ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navicons ul {
+    gap: 15px;
+  }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-item {
+  text-decoration: none;
+  color: black;
+  transition: 0.1s;
+}
+
+.nav-item:hover {
+  color: rgb(19, 153, 19);
+  transition: 1ms;
+}
+
+.nav-item.active {
+  color: rgb(19, 153, 19);
+  font-weight: bold;
+  border-bottom: 2px solid rgb(19, 153, 19);
+  padding-bottom: 2px;
+}
+.account {
+  color: rgb(19, 153, 19);
+}
+.cart{
+    color: rgb(19, 153, 19);
+
+}

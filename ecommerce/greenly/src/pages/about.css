@@ -1,0 +1,238 @@
+.about-container {
+  background-color: #f5fff5;
+  color: #1b5e20;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO SECTION */
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  flex-wrap: wrap;
+}
+
+.about-hero-text {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 40px;
+}
+
+.about-hero-text h1 {
+  font-size: 2.8rem;
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+.about-hero-text h1 span {
+  color: #43a047;
+}
+
+.about-hero-text p {
+  margin-top: 20px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #388e3c;
+}
+
+.about-hero-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 128, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.about-hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* MISSION SECTION */
+.mission-section {
+  text-align: center;
+  padding: 80px 60px;
+  background-color: #ffffff;
+}
+
+.mission-section h2 {
+  font-size: 2.2rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.mission-section p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #4e944f;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.mission-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.mission-card {
+  background-color: #f0fff0;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(46, 125, 50, 0.15);
+  transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+}
+
+.mission-icon {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+/* TEAM SECTION */
+.team-section {
+  text-align: center;
+  padding: 80px 60px;
+  background-color: #f5fff5;
+}
+
+.team-section h2 {
+  font-size: 2.2rem;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.team-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 128, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  color: #1b5e20;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  color: #388e3c;
+  font-size: 1rem;
+}
+
+/* CTA SECTION */
+.about-cta {
+  text-align: center;
+  padding: 80px 60px;
+  background-color: #2e7d32;
+  color: white;
+  border-radius: 0 0 40px 40px;
+}
+
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-cta p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn-join {
+  background-color: #81c784;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: #1b5e20;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-join:hover {
+  background-color: #a5d6a7;
+  transform: scale(1.05);
+}
+
+/* 🌍 Responsive Design */
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 60px 40px;
+  }
+  .mission-section,
+  .team-section,
+  .about-cta {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-hero-text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .mission-icons {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero,
+  .mission-section,
+  .team-section,
+  .about-cta {
+    padding: 40px 20px;
+  }
+  .about-hero-text h1 {
+    font-size: 2rem;
+  }
+  .mission-section h2,
+  .team-section h2,
+  .about-cta h2 {
+    font-size: 1.8rem;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

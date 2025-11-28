@@ -1,0 +1,155 @@
+/* Container */
+.contact-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6fff8;
+  color: #2e7d32;
+  padding: 2rem 1rem;
+}
+
+/* Hero Section */
+.contact-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.contact-hero h1 span {
+  color: #43a047;
+}
+
+.contact-hero p {
+  max-width: 700px;
+  margin: 0.5rem auto;
+  color: #4e4e4e;
+  font-size: 1rem;
+}
+
+/* Main Contact Content */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Info Section */
+.contact-info {
+  flex: 1 1 350px;
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info .icon {
+  color: #43a047;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.info-desc {
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* Form Section */
+.contact-form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #c8e6c9;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #43a047;
+  box-shadow: 0 0 5px rgba(67, 160, 71, 0.3);
+}
+
+.contact-form button {
+  background-color: #43a047;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+/* Map Section */
+.map-section {
+  margin-top: 3rem;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 15px;
+}
+
+/* 🌿 Responsive Design */
+@media (max-width: 992px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}

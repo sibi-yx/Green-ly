@@ -1,0 +1,133 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  max-width: 90%;
+  padding: 1rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.signup-header .leaf-icon {
+  font-size: 2.5rem;
+  color: #43a047;
+  margin-bottom: 0.5rem;
+}
+
+.signup-header h2 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.signup-header span {
+  color: #43a047;
+}
+
+.signup-header p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 0.4rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #43a047;
+  box-shadow: 0 0 6px rgba(67, 160, 71, 0.3);
+  outline: none;
+}
+
+.error {
+  color: #e53935;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+  display: block;
+}
+
+.signup-btn {
+  width: 100%;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+.login-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1.2rem;
+}
+
+.login-text a {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* 🌿 Responsive Design */
+@media (max-width: 576px) {
+  .signup-card {
+    padding: 1.5rem;
+  }
+
+  .signup-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .input-group input {
+    padding: 0.7rem;
+  }
+
+  .signup-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
